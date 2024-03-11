@@ -20,11 +20,12 @@ public class print_array {
 			//System.out.println(a[i]);
 		}
 		
-		for(int i:a)
+		for(int i=l-1;i>=0;--i)
+		{
 		
-			System.out.println(i);
-			
+			System.out.println(a[i]);
 		
+		}
 	}
 
 }
