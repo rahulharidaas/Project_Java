@@ -18,9 +18,10 @@ public class reverse_array {
 			//System.out.println(a[i]);
 		}
 		
-		for(int i:a)
+		for(int i=a.length;i>0;--i)
+		
 		System.out.println(i);
 
 	}
-	{Ī
+	
 }
