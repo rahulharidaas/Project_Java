@@ -1,0 +1,72 @@
+Oops concept 
+-----------------------
+
+Class , Object & Methods 
+--------------------------
+
+-> Structural programming
+-> Object oriented programming 
+
+Definition
+------------
+Class is a logical entity , where as an object is a physical entity.
+An object is an instance of a class.
+so to create an object , we need to creata a class. A class cannot be used directly , we need to create an object inorder to use a class.
+
+Eg: lets take an example of employees, where number of employees will have different info like id  , name and deparment etc.
+
+All these data is called as a class.
+
+- A class is collection of variables and methods 
+- Object is an instance of class 
+- method is a piece of code which will perform some task 
+Methods should be part of class
+
+How to declare a class?
+-------------------------
+
+Class 
+{
+
+variables 
+Methods 
+
+}
+
+Create object for the class 
+-------------------------------
+
+Employee emp = new employee();
+
+Here is Employee is a class 
+emp-->is the variable of object 
+employee() --> Instantiation
+
+
+syntax of Metod 
+-----------------------
+
+m1()
+{
+// code 
+}
+
+some methods will return some values some won't based on the logic.
+If the method is not returing any values, user has to mention to " void" along with the method.
+
+Void m1()
+{
+//code 
+
+}
+
+if the method is returning some values , the user has to mention the data type of the  data which is been returned.
+
+int m1()
+{
+//code 
+//return l --> here l will be an integer value which will be returned 
+}
+
+Note : the data returned  and the data type should be the same data type 
+for exmaple if the return value is integer type , then the user shoudl mention the "int" at the method initiation.
