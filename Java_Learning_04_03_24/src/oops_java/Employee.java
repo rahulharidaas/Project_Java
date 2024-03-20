@@ -2,6 +2,8 @@ package oops_java;
 
 public class Employee 
 
+// Assigning values through object 
+
 {
      int empid;
      String name;
@@ -20,11 +22,11 @@ public class Employee
     	 System.out.println(departmentno);
      }
      
-     // To access class we needy to open an object , only by creating an object user cam 
+     // To access class we need to open an object , only by creating an object user can
      // execute the class 
      // An object will always be in main method.
      
-     public static void mail(String args[])
+     public static void main(String args[])
     		 {
     	        Employee emp1= new Employee();   
     	        emp1.empid=101;
@@ -33,6 +35,14 @@ public class Employee
     	        emp1.departmentno="IT";
     	        
     	        emp1.display();
+    	        
+    	        Employee emp2 = new Employee();
+    	        emp2.empid=102;
+    	        emp2.name="ramu";
+    	        emp2.salary=80000;
+    	        emp2.departmentno="eng";
+    	        
+    	        emp2.display();
     		 
     		 }
  
