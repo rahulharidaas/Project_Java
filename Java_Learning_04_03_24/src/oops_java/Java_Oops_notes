@@ -10,8 +10,10 @@ Class , Object & Methods
 Definition
 ------------
 Class is a logical entity , where as an object is a physical entity.
-An object is an instance of a class.
-so to create an object , we need to creata a class. A class cannot be used directly , we need to create an object inorder to use a class.
+Class is a collection of objects.
+Eg.Under vehicles class there are Car , bus and bike so on.
+An object is an instance of a class.( which means a subset of class) 
+so to create an object , we need to create a class. A class cannot be used directly , we need to create an object inorder to use a class.
 
 Eg: lets take an example of employees, where number of employees will have different info like id  , name and deparment etc.
 
@@ -20,12 +22,12 @@ All these data is called as a class.
 - A class is collection of variables and methods 
 - Object is an instance of class 
 - method is a piece of code which will perform some task 
-Methods should be part of class
+Methods should be part of class, method will do some activities.
 
 How to declare a class?
 -------------------------
 
-Class 
+Class  Employee 
 {
 
 variables 
@@ -38,9 +40,9 @@ Create object for the class
 
 Employee emp = new employee();
 
-Here is Employee is a class 
-emp-->is the variable of object 
-employee() --> Instantiation
+Here  Employee--> is a class 
+emp-->is the variable of object name 
+new employee() --> Instantiation( without this it will not allocate memory ) 
 
 
 syntax of Method 
@@ -62,6 +64,11 @@ Void m1()
 
 if the method is returning some values , the user has to mention the data type of the  data which is been returned.
 
+eg int m1()
+{
+//code
+}
+
 int m1()
 {
 //code 
@@ -69,4 +76,216 @@ int m1()
 }
 
 Note : the data returned  and the data type should be the same data type 
-for exmaple if the return value is integer type , then the user shoudl mention the "int" at the method initiation.
+for example if the return value is integer type , then the user shoudl mention the "int" at the method initiation.
+
+
+
+                                      Methods 
+                              ----------------------
+                                        
+                                        
+                                   Types of methods 
+                                        
+                           How many way we can initialize the class?.
+                                         
+                                         
+                           1.Using Object( Already done) 
+                                         
+                           2.USING CONSTRUCTOR
+                                         
+                             What is a constructor 
+                             
+                             Constructor is a type of method, and the constructor name should be same as class.
+                             In constructor method first we will assign the class variables to a constructor 
+                             method. 
+                             Eg; public class Employees 
+                             
+                                {
+                                int empid;  // These are class variables
+                                String name;
+                                int salary;
+                                int  departmentno;
+                                
+                                }
+                                
+                                // Now we will assign these class variables to a constructor 
+                                Note: A constructor name should be same as class name, here the class name i s
+                                Employees so the constructor name also should be Employees 
+                                
+                                Employees(int id , String nam , int sal, int dept)
+                                {
+                                  empid = id;  // Here we have assigned the class values to the constructor method
+                                  name = nam;
+                                  salary=sal;
+                                  departmentno = dept;
+                                }
+                                
+                                Void display()
+                                {
+                                  System.out.println(empid);
+                                  System.out.println(name);
+                                  System.out.println(salary);
+                                  System.out.println(departmentno);
+                                  
+
+                                }
+                                
+                                public static void main( String args[])
+                                {
+                                   Employees emp1= new Employees(101,"Rahul");
+                                  emp.dispplay();
+                                  
+                                  Employees emp2 = new Employees(102,"ram");
+                                
+                                now after assigning the values / or creating the object will call the method.
+                                emp1.display();
+                                
+                                this will call the method and display the values..
+                                
+                                
+                                }
+                                
+                                
+		 
+                              
+                           3.USING METHOD
+                           
+                           Assigning values to class variable using method.
+                           
+                           Steps 1
+                           
+                           1. Initiate the class and declare the variables
+                              
+                              
+                              public class employees 
+                              {
+                              
+                               int emp_id;
+                               String Name;
+                               int salary;
+                               String department;
+                               
+                               
+                             Step 2. Create a method and assign the  class values to the method variables
+                              Here user can have different method name , no need to have the same as class name.
+                              since this is a method which returns no value we can write method like this.
+                              
+                              void setdata(int id , String nam, int sal,String dept)
+                              {
+                                 emp_id = id ;
+                                 Name = nam;
+                                 salary = sal;
+                                 department = dept;
+                              }
+                              
+                              Step 3. Create a method for the action to be taken place
+                              
+                              {
+                                 System.out.println("id");
+                                
+                                 System.out.println("nam");
+                                 System.out.println("sal");
+                                 System.out.println("dept);
+                                 
+                              
+                              }
+                              
+                              
+                              Step 4 . To access the class we need to create objects
+                              
+                             which we will be doing it on main method 
+                             
+                             public static void main ( String args[])
+                             
+                             
+                             {
+                             // Unlike object and constructor method , here we will call the method with variables.
+                                employee emp1= new employees();
+                                emp1.setdata(101,"ram", 50000, "dept");
+                                emp1.display();
+                             }
+                             
+                               
+                              
+                              }
+                              
+                              
+                              
+                              
+                              Types of Methods 
+                              
+                              There are 4 scenarios 
+                              
+                             
+                              
+                              
+                              1.A method  may not take parameters
+                              
+                                public class calculation
+                                {
+                                  int a; // Declaring the variables 
+                                  int b ;
+                                  
+                                  
+                                  void sum()
+                                  {
+                                    system.out.println(a+b)
+                                  }
+                                  
+                                
+                                
+                                public static void main(String args[]) 
+                                
+                               {
+                                calculation cal= new calculation();// Creating objects to access the class 
+                                
+                                cal.a=100;
+                                cal.b=200;
+                                cal.sum();// calling the method 
+                               }
+                               }
+                              
+                              2.A method  take parameters.
+                              
+                              3.A  Method may  return.
+                              
+                              4.A Method does not  return values.
+                                         
+                                         
+                         
+                          
+                           
+                               
+                                          
+                                        
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
