@@ -247,9 +247,69 @@ for example if the return value is integer type , then the user shoudl mention t
                               
                               2.A method  take parameters.
                               
-                              3.A  Method may  return.
+                              Public class calculation
+                              {
+                               int a;
+                               int b;
+                               
+                               void sum(int x , int y)
+                               {
+                                 a=x;
+                                 b=y;
+                                 
+                                 System.out.println(a+b);
+                                 
+                                 
+                               }
+                                public static void main ( String args[])
+                                {
+                                   calculation cal= new calculation();
+                                   cal.sum(100,200);
+                                   
+                                
+                                }
+                               
+                              }
                               
-                              4.A Method does not  return values.
+                              
+                              
+                              3.A  Method return some value.
+                              
+                              
+                              public class calculation
+                              {
+                                 int a;
+                                 int b;
+                                 
+                                 
+                                 int sum()
+                                 
+                                 {
+                                   return(a+b)
+                                 
+                                 }
+                                 
+                                 public static void main(String args[])
+                                 
+                                 {
+                                   calculation cal = new calculation();
+                                    cal.a=100;
+                                    cal.b=200;
+                                    
+                                    int r=cal.sum();
+                                    system.out.println(r);
+                                   
+                                 }
+                              }
+                              
+                                 
+                              
+                              
+                              
+                              4.A Method does not  return any values.
+                              
+                             -- Same as First  method--
+                              
                                          
                                          
                          
